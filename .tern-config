@@ -1,0 +1,11 @@
+{
+    "plugins": {
+        "es_modules": {}
+    },
+    "libs": [
+        "browser",
+        "jquery"
+    ],
+    "ecmaVersion": 6
+}
+
