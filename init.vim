@@ -6,24 +6,29 @@ set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim',
-Plugin 'jelera/vim-javascript-syntax',
 Plugin 'scrooloose/nerdtree',
 Plugin 'ryanoasis/vim-devicons',
 Plugin 'jiangmiao/auto-pairs',
+Plugin 'mhinz/vim-startify',
 
 " dev
 Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax',
 Plugin 'terryma/vim-multiple-cursors',
 Plugin 'othree/javascript-libraries-syntax.vim',
-Plugin 'leafgarland/typescript-vim',
 Plugin 'alvan/vim-closetag',
+Plugin 'mattn/emmet-vim',
 
 " other
 Plugin 'neomake/neomake',
 Plugin 'Yggdroot/indentLine',
 Plugin 'ctrlpvim/ctrlp.vim',
-Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' },
-Plugin 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' },
+Plugin 'vim-airline/vim-airline',
+
+" ncm
+Plugin 'roxma/nvim-completion-manager',
+Plugin 'roxma/nvim-cm-tern',  {'do': 'npm install'},
+Plugin 'calebeby/ncm-css'
 
 call vundle#end()
 
@@ -62,18 +67,18 @@ set relativenumber
 set tabstop=4 expandtab shiftwidth=4
 set encoding=utf8
 
+set incsearch
+
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 let g:indentLine_char = '|'
 let g:used_javascript_libs = 'angularjs, jasmine, angularui, angularuirouter, jquery'
-let g:deoplete#enable_at_startup = 1
 
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
-let g:deoplete#sources#ternjs#guess = 1
-let g:deoplete#sources#ternjs#docs = 1
 " NEOMAKE
 
 autocmd! BufWritePost * Neomake
@@ -85,17 +90,9 @@ let g:neomake_javascript_jshint_maker = {
       \ }
 
 let g:neomake_javascript_enabled_makers = ['jshint']
-
-let g_neomake_typescript_tslint_maker = {
-    \ 'exe': 'tslint',
-    \ 'args': ['-r', '/usr/local/lib/node_modules/tslint-jsdoc-rules/lib', '--experimentalDecorators']
-    \ }
-
-let g:neomake_typescript_enabled_makers = ['tslint']
-
+let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
 " COLOR 
 
-colorscheme codesweets
-
+colorscheme TrippingRobot
