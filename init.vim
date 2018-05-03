@@ -11,24 +11,27 @@ Plugin 'ryanoasis/vim-devicons',
 Plugin 'jiangmiao/auto-pairs',
 Plugin 'mhinz/vim-startify',
 
+Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' },
+Plugin 'ervandew/supertab',
+
 " dev
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax',
 Plugin 'terryma/vim-multiple-cursors',
-Plugin 'othree/javascript-libraries-syntax.vim',
 Plugin 'alvan/vim-closetag',
 Plugin 'mattn/emmet-vim',
+Plugin 'elzr/vim-json',
+
+Plugin 'SirVer/ultisnips',
+Plugin 'honza/vim-snippets',
+Plugin 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] },
+Plugin 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] },
+Plugin 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] },
 
 " other
 Plugin 'neomake/neomake',
 Plugin 'Yggdroot/indentLine',
 Plugin 'ctrlpvim/ctrlp.vim',
 Plugin 'vim-airline/vim-airline',
-
-" ncm
-Plugin 'roxma/nvim-completion-manager',
-Plugin 'roxma/nvim-cm-tern',  {'do': 'npm install'},
-Plugin 'calebeby/ncm-css'
+Plugin 'dracula/vim',
 
 call vundle#end()
 
@@ -84,15 +87,34 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 autocmd! BufWritePost * Neomake
 let g:neomake_open_list = 2
 
-let g:neomake_javascript_jshint_maker = {
-      \ 'args': ['--verbose'],
-      \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-      \ }
-
-let g:neomake_javascript_enabled_makers = ['jshint']
+let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
+" AUTOCOMPLETE
+
+let g:deoplete#enable_at_startup = 1
+
+let g:deoplete#omni#functions = {}
+let g:deoplete#omni#functions.javascript = [
+    \ 'tern#Complete',
+    \ 'jspc#omni'
+\]
+
+set completeopt=longest,menuone,preview
+let g:deoplete#sources = {}
+let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
+let g:tern#command = ['tern']
+let g:tern#arguments = ['--persistenr']
+
+autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<C-j>"
+inoremap <expr><TAB> pumvisible() ? "\<C-n>": "/<TAB>"
+
+let g:SuperTabClosePreviewOnPopupClose = 1
+
 " COLOR 
 
-colorscheme TrippingRobot
+" colorscheme TrippingRobot
+colorscheme dracula
+
