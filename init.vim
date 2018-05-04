@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+" -------------- PLUGINS ---------------
+
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -10,23 +12,17 @@ Plugin 'scrooloose/nerdtree',
 Plugin 'ryanoasis/vim-devicons',
 Plugin 'jiangmiao/auto-pairs',
 Plugin 'mhinz/vim-startify',
-
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' },
 Plugin 'ervandew/supertab',
-
-" dev
 Plugin 'terryma/vim-multiple-cursors',
 Plugin 'alvan/vim-closetag',
 Plugin 'mattn/emmet-vim',
 Plugin 'elzr/vim-json',
-
 Plugin 'SirVer/ultisnips',
 Plugin 'honza/vim-snippets',
 Plugin 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] },
 Plugin 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] },
 Plugin 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] },
-
-" other
 Plugin 'neomake/neomake',
 Plugin 'Yggdroot/indentLine',
 Plugin 'ctrlpvim/ctrlp.vim',
@@ -37,52 +33,80 @@ call vundle#end()
 
 filetype plugin indent on
 
-" NERD TREE 
+" -------------- NERD TREE ---------------
 
 imap <C-b> <c-[> :NERDTreeToggle<CR>
 nmap <C-b> :NERDTreeToggle<CR>
 vmap <C-b> :NERDTreeToggle<CR>
 let NERDTreeChDirMode = 2
-let NERDTreeShowBookmarks = 0
+let NERDTreeShowBookmarks = 1
 let NERDTreeShowLineNumbers = 1
+
+" use mouse
 set mouse=a
 
+" add relativenumbers to nerdtree
 autocmd FileType nerdtree setlocal relativenumber
 
-" PANES MOVEMENT
+" -------------- NAVIGATION ---------------
 
+" panes
 nmap <silent> <C-h> :winc h<CR>
 nmap <silent> <C-j> :winc j<CR>
 nmap <silent> <C-k> :winc k<CR>
 nmap <silent> <C-l> :winc l<CR>
 
+" tabs
 nmap <silent> tn :tabnew<Space>
 nmap <silent> tk :tabnext<CR>
 nmap <silent> tj :tabprev<CR>
 
+" save & quit
 nmap <silent> <C-q> :q <CR>
 nmap <silent> <C-s> :w <CR>
 
-" OTHER 
+" -------------- OTHER ---------------
 
+" line numbers
 set number
 set relativenumber
+
+" indent
 set tabstop=4 expandtab shiftwidth=4
+let g:indentLine_char = '|'
+
+" encoding
 set encoding=utf8
 
+" search 
 set incsearch
 
+" swp files save dir
+set swapfile
+set dir=~/.tmp
+
+" persistent undo
+set undofile
+set undodir=~/.tmp
+
+" remove comments in new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" json quotation marks
+let g:vim_json_syntax_conceal = 0
+
+" ctrl_p config
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-let g:indentLine_char = '|'
+" js syntax
 let g:used_javascript_libs = 'angularjs, jasmine, angularui, angularuirouter, jquery'
 
+" python configuration
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
-" NEOMAKE
+" -------------- NEOMAKE ---------------
 
 autocmd! BufWritePost * Neomake
 let g:neomake_open_list = 2
@@ -113,8 +137,6 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>": "/<TAB>"
 
 let g:SuperTabClosePreviewOnPopupClose = 1
 
-" COLOR 
-
-" colorscheme TrippingRobot
+" -------------- COLOR ---------------
 colorscheme dracula
 
