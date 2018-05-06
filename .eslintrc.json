@@ -1,0 +1,23 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "amd": true, 
+        "jasmine": true
+    },
+    "rules": {
+        "jsx-quotes": 1,
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "semi": ["error", "always" ],
+        "no-console": "off"
+    },
+    "plugins": [
+        "jasmine"
+    ]
+}
