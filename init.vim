@@ -27,7 +27,14 @@ Plugin 'neomake/neomake',
 Plugin 'Yggdroot/indentLine',
 Plugin 'ctrlpvim/ctrlp.vim',
 Plugin 'vim-airline/vim-airline',
+Plugin 'romainl/vim-qf',
+
 Plugin 'dracula/vim',
+
+Plugin 'othree/yajs.vim',
+Plugin 'mxw/vim-jsx',
+Plugin 'othree/es.next.syntax.vim',
+Plugin 'vim-scripts/JavaScript-Indent'
 
 call vundle#end()
 
@@ -114,6 +121,9 @@ let g:neomake_open_list = 2
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+"auto close errors window
+let g:qf_loclist_window_bottom = 0
 
 " AUTOCOMPLETE
 
