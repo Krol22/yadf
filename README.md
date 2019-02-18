@@ -1,2 +1,9 @@
-# dotFiles_v2
-New version of dotfiles.
+# YADF
+Yet another dot files.
+
+```
+  chmod +x install.sh
+  ./install.sh
+```
+
+
