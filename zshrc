@@ -1,12 +1,12 @@
 export PATH=~/.npm-global/bin:/usr/local/bin/mongod:/bin:/usr/bin:/usr/local/bin:${PATH}
-export ZSH=/Users/krol22/.oh-my-zsh
+export ZSH=/Users/${USER}/.oh-my-zsh
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8 &>/dev/null`
 export NODE_ENV='development'
 
-source ~/.config/dotFiles/antigen.zsh
+source ~/.config/yadf/antigen.zsh
 source $ZSH/oh-my-zsh.sh
-source ~/.config/dotFiles/aliases.sh
+source ~/.config/yadf/aliases.sh
 
 antigen use oh-my-zsh
 antigen bundle git
