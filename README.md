@@ -18,6 +18,8 @@ Launch installation script
 ## Installs:
 - [zsh](http://zsh.sourceforge.net)
 - [neovim](https://neovim.io) 
+- [node](https://nodejs.org/en/)
+- [iterm2](https://www.iterm2.com/)
 - [dozer](https://github.com/Mortennn/Dozer)
 - [oh-my-zsh](https://ohmyz.sh)
 - [antigen.zsh](https://github.com/zsh-users/antigen)
