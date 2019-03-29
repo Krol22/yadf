@@ -26,7 +26,8 @@ Plugin 'vim-airline/vim-airline',
 Plugin 'romainl/vim-qf',
 Plugin 'dracula/vim',
 Plugin 'othree/yajs.vim',
-Plugin 'vim-scripts/JavaScript-Indent'
+Plugin 'vim-scripts/JavaScript-Indent',
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
