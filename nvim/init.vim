@@ -9,6 +9,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim',
 Plugin 'scrooloose/nerdtree',
+Plugin 'scrooloose/nerdcommenter',
 Plugin 'ryanoasis/vim-devicons',
 Plugin 'jiangmiao/auto-pairs',
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' },
@@ -24,10 +25,14 @@ Plugin 'Yggdroot/indentLine',
 Plugin 'ctrlpvim/ctrlp.vim',
 Plugin 'vim-airline/vim-airline',
 Plugin 'romainl/vim-qf',
-Plugin 'dracula/vim',
 Plugin 'othree/yajs.vim',
-Plugin 'vim-scripts/JavaScript-Indent',
-Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround',
+
+" Color schemes
+Plugin 'dracula/vim',
+Plugin 'Drogglbecher/vim-moonscape',
+Plugin 'ciaranm/inkpot',
+Plugin 'julien/vim-miniml',
 
 call vundle#end()
 

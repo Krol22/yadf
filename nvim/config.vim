@@ -103,9 +103,31 @@ let g:tern#arguments = ['--persistenr']
 
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:UltiSnipsExpandTrigger="<C-j>"
-inoremap <expr><TAB> pumvisible() ? "\<C-n>": "/<TAB>"
+inoremap <expr><TAB> pumvisible() ? "\<C-n>": "<TAB>"
 
 let g:SuperTabClosePreviewOnPopupClose = 1
-
 " -------------- COLOR ---------------
-colorscheme dracula
+" colorscheme dracula
+colorscheme moonscape
+" colorscheme inkpot
+" colorscheme miniml
+
+" --------------- COMMENTS -----------------
+
+" mappings
+" mapping Ctrl + / 
+nmap <C-_> <leader>c<space>
+vmap <C-_> <leader>c<space>
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
