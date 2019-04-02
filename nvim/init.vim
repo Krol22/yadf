@@ -27,6 +27,8 @@ Plugin 'vim-airline/vim-airline',
 Plugin 'romainl/vim-qf',
 Plugin 'othree/yajs.vim',
 Plugin 'tpope/vim-surround',
+Plugin 'tpope/vim-sleuth',
+Plugin 'benjie/local-npm-bin.vim',
 
 " Color schemes
 Plugin 'dracula/vim',
@@ -36,5 +38,6 @@ Plugin 'julien/vim-miniml',
 
 call vundle#end()
 
+source ~/.config/nvim/eslint-local.vim
 source ~/.config/nvim/config.vim
 
