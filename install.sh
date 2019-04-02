@@ -14,6 +14,7 @@ rm $HOME/.zshrc
 ln $HOME/.config/yadf/zshrc $HOME/.zshrc
 cp ./antigen.zsh $HOME/.antigen.zsh
 cp ./aliases.sh $HOME/.aliases.sh
+cp ./.tern-config $HOME/.tern-config
 
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim/
 
