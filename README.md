@@ -25,6 +25,9 @@ Launch installation script
 - [antigen.zsh](https://github.com/zsh-users/antigen)
 - [colorls](https://github.com/athityakumar/colorls)
 
+Npm packages:
+- [tern](https://github.com/ternjs/tern)
+
 `install.sh` script links zsh configuration file (`zshrc`) to `~/.zshrc`. Also it copies `nvim` folder to `~/.config/`. You still need to run command `:PluginInstall` from neovim to install all plugins listed in `nvim/init.vim`.
 
 ## Includes aliases:
@@ -44,5 +47,4 @@ alias gs="git status"
 alias gp="git push origin"
 alias glp="gp -l"
 ```
-
 

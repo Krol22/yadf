@@ -18,5 +18,7 @@ cp ./.tern-config $HOME/.tern-config
 
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim/
 
+sudo npm install -g tern
+
 echo "Run :PluginInstall from nvim to install all nvim plugins"
 echo "You need still install VSCode, Spectacle, SwitchResX, Alfred";
