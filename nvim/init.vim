@@ -3,41 +3,38 @@ filetype off
 
 " -------------- PLUGINS ---------------
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
+call plug#begin()
 
-call vundle#begin()
+Plug 'VundleVim/Vundle.vim',
+Plug 'scrooloose/nerdtree',
+Plug 'scrooloose/nerdcommenter',
+Plug 'ryanoasis/vim-devicons',
+Plug 'jiangmiao/auto-pairs',
+Plug 'terryma/vim-multiple-cursors',
+Plug 'alvan/vim-closetag',
+Plug 'elzr/vim-json',
+Plug 'neomake/neomake',
+Plug 'Yggdroot/indentLine',
+Plug 'ctrlpvim/ctrlp.vim',
+Plug 'vim-airline/vim-airline',
+Plug 'romainl/vim-qf',
+Plug 'othree/yajs.vim',
+Plug 'tpope/vim-surround',
+Plug 'tpope/vim-sleuth',
+Plug 'benjie/local-npm-bin.vim',
 
-Plugin 'VundleVim/Vundle.vim',
-Plugin 'scrooloose/nerdtree',
-Plugin 'scrooloose/nerdcommenter',
-Plugin 'ryanoasis/vim-devicons',
-Plugin 'jiangmiao/auto-pairs',
-Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' },
-Plugin 'ervandew/supertab',
-Plugin 'terryma/vim-multiple-cursors',
-Plugin 'alvan/vim-closetag',
-Plugin 'elzr/vim-json',
-Plugin 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] },
-Plugin 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] },
-Plugin 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] },
-Plugin 'neomake/neomake',
-Plugin 'Yggdroot/indentLine',
-Plugin 'ctrlpvim/ctrlp.vim',
-Plugin 'vim-airline/vim-airline',
-Plugin 'romainl/vim-qf',
-Plugin 'othree/yajs.vim',
-Plugin 'tpope/vim-surround',
-Plugin 'tpope/vim-sleuth',
-Plugin 'benjie/local-npm-bin.vim',
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
 
 " Color schemes
-Plugin 'dracula/vim',
-Plugin 'Drogglbecher/vim-moonscape',
-Plugin 'ciaranm/inkpot',
-Plugin 'julien/vim-miniml',
+Plug 'dracula/vim',
+Plug 'Drogglbecher/vim-moonscape',
+Plug 'ciaranm/inkpot',
+Plug 'julien/vim-miniml',
 
-call vundle#end()
+call plug#end()
 
+source ~/.config/nvim/coc.vim
 source ~/.config/nvim/eslint-local.vim
 source ~/.config/nvim/config.vim
 

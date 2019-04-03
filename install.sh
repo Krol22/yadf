@@ -16,9 +16,11 @@ cp ./antigen.zsh $HOME/.antigen.zsh
 cp ./aliases.sh $HOME/.aliases.sh
 cp ./.tern-config $HOME/.tern-config
 
-git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim/
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sudo npm install -g tern
 
-echo "Run :PluginInstall from nvim to install all nvim plugins"
-echo "You need still install VSCode, Spectacle, SwitchResX, Alfred";
+echo "Run :PlugInstall from nvim to install all nvim plugins"
+echo "Then run :CocInstall coc-tsserver"
+echo "You need still install VSCode, Spectacle, SwitchResX, Alfred"
