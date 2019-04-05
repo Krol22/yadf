@@ -31,6 +31,7 @@ Plug 'dracula/vim',
 Plug 'Drogglbecher/vim-moonscape',
 Plug 'ciaranm/inkpot',
 Plug 'julien/vim-miniml',
+Plug 'anned20/vimsence',
 
 call plug#end()
 
