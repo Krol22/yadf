@@ -6,7 +6,7 @@ filetype off
 call plug#begin()
 
 Plug 'VundleVim/Vundle.vim',
-Plug 'scrooloose/nerdtree',
+" Plug 'scrooloose/nerdtree',
 Plug 'scrooloose/nerdcommenter',
 Plug 'ryanoasis/vim-devicons',
 Plug 'jiangmiao/auto-pairs',
@@ -20,7 +20,9 @@ Plug 'vim-airline/vim-airline',
 Plug 'romainl/vim-qf',
 Plug 'othree/yajs.vim',
 Plug 'tpope/vim-surround',
+Plug 'tpope/vim-vinegar',
 Plug 'tpope/vim-sleuth',
+Plug 'tpope/vim-fugitive',
 Plug 'benjie/local-npm-bin.vim',
 
 " Autocompletion

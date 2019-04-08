@@ -2,12 +2,12 @@ filetype plugin indent on
 
 " -------------- NERD TREE ---------------
 
-imap <C-b> <c-[> :NERDTreeToggle<CR>
-nmap <C-b> :NERDTreeToggle<CR>
-vmap <C-b> :NERDTreeToggle<CR>
-let NERDTreeChDirMode = 2
-let NERDTreeShowBookmarks = 1
-let NERDTreeShowLineNumbers = 1
+" imap <C-b> <c-[> :NERDTreeToggle<CR>
+" nmap <C-b> :NERDTreeToggle<CR>
+" vmap <C-b> :NERDTreeToggle<CR>
+" let NERDTreeChDirMode = 2
+" let NERDTreeShowBookmarks = 1
+" let NERDTreeShowLineNumbers = 1
 
 " use mouse
 set mouse=a
