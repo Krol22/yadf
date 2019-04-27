@@ -25,6 +25,9 @@ Plug 'tpope/vim-sleuth',
 Plug 'tpope/vim-fugitive',
 Plug 'benjie/local-npm-bin.vim',
 
+" C++
+
+
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
 
@@ -34,6 +37,7 @@ Plug 'Drogglbecher/vim-moonscape',
 Plug 'ciaranm/inkpot',
 Plug 'julien/vim-miniml',
 Plug 'anned20/vimsence',
+
 
 call plug#end()
 

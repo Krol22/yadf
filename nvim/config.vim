@@ -84,27 +84,13 @@ let b:neomake_javascript_eslint_exe = GetNpmBin('eslint')
 let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
+let g:neomake_cpp_enabled_makers = ['clang']
+let g:neomake_cpp_clang_maker = {'exe': 'clang'}
+
 "auto close errors window
 let g:qf_loclist_window_bottom = 0
 
 " AUTOCOMPLETE
-
-" let g:deoplete#enable_at_startup = 1
-"
-" let g:deoplete#omni#functions = {}
-" let g:deoplete#omni#functions.javascript = [
-    " \ 'tern#Complete',
-    " \ 'jspc#omni'
-" \]
-"
-" set completeopt=longest,menuone,preview
-" let g:deoplete#sources = {}
-" let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
-" let g:tern#command = ['tern']
-" let g:tern#arguments = ['--persistenr']
-
-" autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-" let g:UltiSnipsExpandTrigger="<C-j>"
 " inoremap <expr><TAB> pumvisible() ? "\<C-n>": "<TAB>"
 
 let g:SuperTabClosePreviewOnPopupClose = 1
