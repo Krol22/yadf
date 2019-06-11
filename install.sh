@@ -25,4 +25,5 @@ sudo npm install -g tern
 
 echo "Run :PlugInstall from nvim to install all nvim plugins"
 echo "Then run :CocInstall coc-tsserver"
-echo "You need still install VSCode, Spectacle, SwitchResX, Alfred"
+echo "You need still install Spectacle, SwitchResX, Alfred"
+echo "Install provided Hacker Nerd Font and apply iterm icon to kitty"
