@@ -3,8 +3,9 @@ sudo gem install colorls
 brew install zsh
 brew install neovim
 brew install node
-brew cask install iterm2
 brew cask install dozer
+
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -15,6 +16,7 @@ ln $HOME/.config/yadf/zshrc $HOME/.zshrc
 cp ./antigen.zsh $HOME/.antigen.zsh
 cp ./aliases.sh $HOME/.aliases.sh
 cp ./.tern-config $HOME/.tern-config
+cp ./kitty.conf $HOME/.config/kitty/kitty.conf
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
