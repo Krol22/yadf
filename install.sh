@@ -11,7 +11,7 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 cp -r ./nvim $HOME/.config
 
 rm $HOME/.zshrc
-ln $HOME/.config/yadf/zshrc $HOME/.zshrc
+cp ./zshrc $HOME/.zshrc
 cp ./antigen.zsh $HOME/.antigen.zsh
 cp ./aliases.sh $HOME/.aliases.sh
 cp ./.tern-config $HOME/.tern-config
