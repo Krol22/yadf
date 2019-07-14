@@ -6,7 +6,6 @@ filetype off
 call plug#begin()
 
 Plug 'VundleVim/Vundle.vim',
-" Plug 'scrooloose/nerdtree',
 Plug 'scrooloose/nerdcommenter',
 Plug 'ryanoasis/vim-devicons',
 Plug 'jiangmiao/auto-pairs',
@@ -24,20 +23,10 @@ Plug 'tpope/vim-vinegar',
 Plug 'tpope/vim-sleuth',
 Plug 'tpope/vim-fugitive',
 Plug 'benjie/local-npm-bin.vim',
-
-" C++
-
+Plug 'kamykn/dark-theme.vim',
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
-
-" Color schemes
-Plug 'dracula/vim',
-Plug 'Drogglbecher/vim-moonscape',
-Plug 'ciaranm/inkpot',
-Plug 'julien/vim-miniml',
-Plug 'anned20/vimsence',
-
 
 call plug#end()
 

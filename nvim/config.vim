@@ -1,14 +1,5 @@
 filetype plugin indent on
 
-" -------------- NERD TREE ---------------
-
-" imap <C-b> <c-[> :NERDTreeToggle<CR>
-" nmap <C-b> :NERDTreeToggle<CR>
-" vmap <C-b> :NERDTreeToggle<CR>
-" let NERDTreeChDirMode = 2
-" let NERDTreeShowBookmarks = 1
-" let NERDTreeShowLineNumbers = 1
-
 " use mouse
 set mouse=a
 
@@ -66,9 +57,6 @@ let g:vim_json_syntax_conceal = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
-" js syntax
-let g:used_javascript_libs = 'angularjs, jasmine, angularui, angularuirouter, jquery'
-
 " python configuration
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
@@ -94,16 +82,12 @@ let g:qf_loclist_window_bottom = 0
 " inoremap <expr><TAB> pumvisible() ? "\<C-n>": "<TAB>"
 
 let g:SuperTabClosePreviewOnPopupClose = 1
+
 " -------------- COLOR ---------------
-" colorscheme dracula
-colorscheme moonscape
-" colorscheme inkpot
-" colorscheme miniml
+colorscheme darktheme
 
 " --------------- COMMENTS -----------------
 
-" mappings
-" mapping Ctrl + / 
 nmap <C-_> <leader>c<space>
 vmap <C-_> <leader>c<space>
 
