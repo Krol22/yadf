@@ -83,9 +83,6 @@ let g:qf_loclist_window_bottom = 0
 
 let g:SuperTabClosePreviewOnPopupClose = 1
 
-" -------------- COLOR ---------------
-colorscheme darktheme
-
 " --------------- COMMENTS -----------------
 
 nmap <C-_> <leader>c<space>
