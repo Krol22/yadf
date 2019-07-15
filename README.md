@@ -15,6 +15,12 @@ Launch installation script
   ./install.sh
 ```
 
+If you want to install just nvim configuration run:
+```
+  chmod +x install-nvim-only.sh
+  ./install-nvim-only.sh
+```
+
 ## Installs:
 - [zsh](http://zsh.sourceforge.net)
 - [neovim](https://neovim.io) 
