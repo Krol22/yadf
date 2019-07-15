@@ -10,5 +10,8 @@
 				}
 			}
 		}
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
 	}
 }
