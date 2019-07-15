@@ -28,7 +28,14 @@ Launch installation script
 Npm packages:
 - [tern](https://github.com/ternjs/tern)
 
-`install.sh` script links zsh configuration file (`zshrc`) to `~/.zshrc`. Also it copies `nvim` folder to `~/.config/`. You still need to run command `:PluginInstall` from neovim to install all plugins listed in `nvim/init.vim`.
+`install.sh` script links zsh configuration file (`zshrc`) to `~/.zshrc`. Also it copies `nvim` folder to `~/.config/`. You still need to run command `:PlugInstall` from neovim to install all plugins listed in `nvim/init.vim`. 
+
+After plugins installation you need to run :
+
+- ``` :CocInstall coc-tsserver ```
+- ``` :CocInstall coc-emmet ``` 
+
+to install all extensions for [coc.nvim](https://github.com/neoclide/coc.nvim).
 
 ## Includes aliases:
 ```
