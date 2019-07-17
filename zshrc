@@ -4,9 +4,9 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8 &>/dev/null`
 export NODE_ENV='development'
 
-source ~/.config/yadf/antigen.zsh
+source ~/.antigen.zsh
+source ~/.aliases.sh
 source $ZSH/oh-my-zsh.sh
-source ~/.config/yadf/aliases.sh
 
 antigen use oh-my-zsh
 antigen bundle git
@@ -23,7 +23,7 @@ antigen theme lambda
 
 antigen apply
 
-alias aliases="cat ~/.config/aliases"
+alias aliases="cat ~/.aliases.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

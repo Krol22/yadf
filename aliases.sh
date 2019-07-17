@@ -12,3 +12,5 @@ alias gc="git commit -m"
 alias gs="git status"
 alias gp="git push origin"
 alias glp="gp -l"
+
+alias nnvim="~/.config/nvim-nightly/bin/nvim"

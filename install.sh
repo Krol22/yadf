@@ -5,6 +5,11 @@ brew install neovim
 brew install node
 brew cask install dozer
 
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+tar xzf nvim-macos.tar.gz
+mv ./nvim-osx64 ~/.config/nvim-nightly
+rm -rd nvim-macos.tar.gz nvim-osx64
+
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
