@@ -61,6 +61,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+" enable rainbow parentheses
+let g:rainbow_active = 1
+
 " -------------- NEOMAKE ---------------
 
 autocmd! BufWritePost * Neomake

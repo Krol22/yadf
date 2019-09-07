@@ -23,6 +23,7 @@ Plug 'tpope/vim-vinegar',
 Plug 'tpope/vim-sleuth',
 Plug 'tpope/vim-fugitive',
 Plug 'benjie/local-npm-bin.vim',
+Plug 'luochen1990/rainbow',
 
 " Color
 Plug 'kamykn/dark-theme.vim',
