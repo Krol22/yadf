@@ -9,6 +9,7 @@ let s:light_colorscheme = get(g:, 'light_colorscheme', 'vanilla-cake')
   :if (&background == "light")
     :execute "colorscheme " . s:dark_colorscheme
     :let &background = "dark"
+    :hi Normal guibg=NONE ctermbg=NONE
   :else 
     :colorscheme vanilla-cake
     :execute "colorscheme " . s:light_colorscheme
@@ -17,4 +18,5 @@ let s:light_colorscheme = get(g:, 'light_colorscheme', 'vanilla-cake')
 :endfunction
 
 :execute "colorscheme ".s:dark_colorscheme
+:hi Normal guibg=NONE ctermbg=NONE
 

@@ -12,6 +12,8 @@ brew cask install ubersicht
 brew install yabai
 brew install koekeishiya/formulae/skhd
 
+brew install neofetch
+
 # git clone https://github.com/kkga/nibar $HOME/Library/Application\ Support/Übersicht/widgets/nibar
 git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application Support/Übersicht/widgets/pecan"
 
