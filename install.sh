@@ -14,8 +14,9 @@ brew install koekeishiya/formulae/skhd
 
 brew install neofetch
 
-# git clone https://github.com/kkga/nibar $HOME/Library/Application\ Support/Übersicht/widgets/nibar
 git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application Support/Übersicht/widgets/pecan"
+
+cp ./pecan/style.css $HOME/Library/Application\ Support/Übersicht/widgets/pecan/style.css
 
 # curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
 # tar xzf nvim-macos.tar.gz
