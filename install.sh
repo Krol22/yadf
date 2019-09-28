@@ -42,6 +42,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 sudo npm install -g tern
 
+brew services start yabai
 brew services start skhd
 
 echo "Run :PlugInstall from nvim to install all nvim plugins"
