@@ -25,6 +25,7 @@ Plug 'tpope/vim-fugitive',
 Plug 'benjie/local-npm-bin.vim',
 Plug 'luochen1990/rainbow',
 Plug 'davidosomething/vim-colors-meh',
+Plug 'junegunn/vader.vim',
 
 " Color
 Plug 'kamykn/dark-theme.vim',
