@@ -30,6 +30,10 @@ If you want to install just nvim configuration run:
 - [oh-my-zsh](https://ohmyz.sh)
 - [antigen.zsh](https://github.com/zsh-users/antigen)
 - [colorls](https://github.com/athityakumar/colorls)
+- [Übersicht](http://tracesof.net/uebersicht/)
+- [yabai](https://github.com/koekeishiya/yabai)
+- [skhd](https://github.com/koekeishiya/skhd)
+- [pecan](https://github.com/zzzeyez/pecan)
 
 Npm packages:
 - [tern](https://github.com/ternjs/tern)
