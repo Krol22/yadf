@@ -1,6 +1,10 @@
 # YADF
 Yet another dot files.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/Krol22/yadf/master/screenshot/screen.jpg)
+
 ## Installation
 
 Clone repository
