@@ -35,7 +35,7 @@ cp ./aliases.sh $HOME/.aliases.sh
 cp ./.tern-config $HOME/.tern-config
 cp ./skhdrc $HOME/.skhdrc
 cp ./yabairc $HOME/.yabairc
-cp ./kitty.conf $HOME/.config/kitty/kitty.conf
+# cp ./kitty.conf $HOME/.config/kitty/kitty.conf
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -48,4 +48,4 @@ brew services start skhd
 echo "Run :PlugInstall from nvim to install all nvim plugins"
 echo "Then run :CocInstall coc-tsserver"
 echo "You need still install Spectacle, SwitchResX, Alfred"
-echo "Install provided Hacker Nerd Font and apply iterm icon to kitty"
+# echo "Install provided Hacker Nerd Font and apply iterm icon to kitty"

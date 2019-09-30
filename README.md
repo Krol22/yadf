@@ -29,7 +29,6 @@ If you want to install just nvim configuration run:
 - [zsh](http://zsh.sourceforge.net)
 - [neovim](https://neovim.io) 
 - [node](https://nodejs.org/en/)
-- [kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - [dozer](https://github.com/Mortennn/Dozer)
 - [oh-my-zsh](https://ohmyz.sh)
 - [antigen.zsh](https://github.com/zsh-users/antigen)
