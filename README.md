@@ -69,3 +69,8 @@ alias gp="git push origin"
 alias glp="gp -l"
 ```
 
+## Todo: 
+
+- workspaces configuration (not working currently),
+- pecan configuration,
+
