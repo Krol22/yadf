@@ -47,6 +47,8 @@ set dir=~/.tmp
 set undofile
 set undodir=~/.tmp
 
+set guicursor+=i:hor20-Cursor/lCursor
+
 " remove comments in new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
