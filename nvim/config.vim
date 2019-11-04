@@ -1,7 +1,7 @@
 filetype plugin indent on
 
 " use mouse
-set mouse=a
+" set mouse=a
 
 " add relativenumbers to nerdtree
 autocmd FileType nerdtree setlocal relativenumber
