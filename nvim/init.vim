@@ -30,6 +30,7 @@ Plug 'junegunn/vader.vim',
 " Color
 Plug 'kamykn/dark-theme.vim',
 Plug 'sainnhe/vim-color-vanilla-cake',
+Plug 'jaredgorski/spacecamp',
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},

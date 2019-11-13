@@ -2,7 +2,7 @@ nmap <silent> <C-g> :call ChangeTheme() <CR>
 vmap <silent> <C-g> :call ChangeTheme() <CR>
 
 let &background = "dark"
-let s:dark_colorscheme = get(g:, 'dark_colorscheme', 'meh')
+let s:dark_colorscheme = get(g:, 'dark_colorscheme', 'spacecamp')
 let s:light_colorscheme = get(g:, 'light_colorscheme', 'vanilla-cake')
 
 :function ChangeTheme()
