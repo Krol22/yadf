@@ -26,6 +26,8 @@ Plug 'benjie/local-npm-bin.vim',
 Plug 'luochen1990/rainbow',
 Plug 'davidosomething/vim-colors-meh',
 Plug 'junegunn/vader.vim',
+Plug 'leafgarland/typescript-vim',
+Plug 'peitalin/vim-jsx-typescript',
 
 " Color
 Plug 'kamykn/dark-theme.vim',
