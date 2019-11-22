@@ -38,6 +38,7 @@ set encoding=utf8
 
 " search 
 set incsearch
+set ignorecase 
 
 " swp files save dir
 set swapfile
