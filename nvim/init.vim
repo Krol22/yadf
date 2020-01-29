@@ -32,6 +32,7 @@ Plug 'peitalin/vim-jsx-typescript',
 " Color
 Plug 'kamykn/dark-theme.vim',
 Plug 'sainnhe/vim-color-vanilla-cake',
+Plug 'xdg/vim-darkluma'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},

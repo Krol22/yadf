@@ -13,4 +13,5 @@ alias gs="git status"
 alias gp="git push origin"
 alias glp="gp -l"
 
+alias fix='vi `git diff --name-only | uniq`'
 alias nnvim="~/.config/nvim-nightly/bin/nvim"
