@@ -23,6 +23,9 @@ nmap <silent> tj :tabprev<CR>
 nmap <silent> <C-q> :q <CR>
 nmap <silent> <C-s> :w <CR>
 
+" exit from terminal
+tnoremap <C-R> <C-\><C-n>
+
 " -------------- OTHER ---------------
 
 " line numbers
@@ -38,6 +41,7 @@ set encoding=utf8
 
 " search 
 set incsearch
+set ignorecase 
 
 " swp files save dir
 set swapfile
