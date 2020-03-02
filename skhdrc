@@ -5,10 +5,10 @@ cmd - k : yabai -m window --focus north
 cmd - l : yabai -m window --focus east
 
 # swap window
-shift + alt - h : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - l : yabai -m window --swap east
+# shift + alt - h : yabai -m window --swap west
+# shift + alt - j : yabai -m window --swap south
+# shift + alt - k : yabai -m window --swap north
+# shift + alt - l : yabai -m window --swap east
 
 # move window
 shift + cmd - h : yabai -m window --warp west
@@ -43,8 +43,8 @@ cmd + alt - n : yabai -m space --create && \
 cmd + alt - w : yabai -m space --destroy
 
 # fast focus desktop
-cmd + alt - x : yabai -m space --focus recent
-cmd + alt - z : yabai -m space --focus prev
+# cmd + alt - x : yabai -m space --focus recent
+# cmd + alt - z : yabai -m space --focus prev
 cmd + alt - c : yabai -m space --focus next
 cmd + alt - 1 : yabai -m space --focus 1
 cmd + alt - 2 : yabai -m space --focus 2
@@ -58,8 +58,8 @@ cmd + alt - 9 : yabai -m space --focus 9
 cmd + alt - 0 : yabai -m space --focus 10
 
 # send window to desktop and follow focus
-shift + cmd - x : yabai -m window --space recent; yabai -m space --focus recent
-shift + cmd - z : yabai -m window --space prev; yabai -m space --focus prev
+# shift + cmd - x : yabai -m window --space recent; yabai -m space --focus recent
+# shift + cmd - z : yabai -m window --space prev; yabai -m space --focus prev
 shift + cmd - c : yabai -m window --space next; yabai -m space --focus next
 shift + cmd - 1 : yabai -m window --space  1; yabai -m space --focus 1
 shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
