@@ -29,6 +29,7 @@ Plug 'leafgarland/typescript-vim',
 Plug 'peitalin/vim-jsx-typescript',
 Plug 'calviken/vim-gdscript3',
 
+Plug 'voldikss/vim-floaterm',
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
 

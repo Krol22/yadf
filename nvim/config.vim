@@ -3,8 +3,7 @@ filetype plugin indent on
 " use mouse
 set mouse=a
 
-" add relativenumbers to nerdtree
-autocmd FileType nerdtree setlocal relativenumber
+autocmd User Startified setlocal buflisted
 
 " -------------- NAVIGATION ---------------
 
@@ -28,6 +27,10 @@ tnoremap <C-R> <C-\><C-n>
 
 " open fzf
 nmap <silent> <C-P> :Files<CR>
+
+" open lazygit
+nmap <silent> <C-O> :FloatermNew lazygit <CR>
+
 
 " -------------- OTHER ---------------
 
@@ -55,6 +58,8 @@ set undofile
 set undodir=~/.tmp
 
 set guicursor+=i:hor20-Cursor/lCursor
+
+set:floaterm_position = 'center'
 
 " remove comments in new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
