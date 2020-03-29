@@ -13,6 +13,7 @@ brew install yabai
 brew install koekeishiya/formulae/skhd
 
 brew install neofetch
+brew install fd
 
 git clone https://github.com/zzzeyez/pecan.git "$HOME/Library/Application Support/Übersicht/widgets/pecan"
 

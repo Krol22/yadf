@@ -4,6 +4,7 @@ export ZSH=/Users/${USER}/.oh-my-zsh
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8 &>/dev/null`
 export NODE_ENV='development'
 export POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 source ~/.antigen.zsh
 source ~/.aliases.sh

@@ -14,7 +14,6 @@ Plug 'alvan/vim-closetag',
 Plug 'elzr/vim-json',
 Plug 'neomake/neomake',
 Plug 'Yggdroot/indentLine',
-Plug 'ctrlpvim/ctrlp.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'romainl/vim-qf',
 Plug 'othree/yajs.vim',
@@ -30,10 +29,14 @@ Plug 'leafgarland/typescript-vim',
 Plug 'peitalin/vim-jsx-typescript',
 Plug 'calviken/vim-gdscript3',
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim',
+
 " Color
 Plug 'kamykn/dark-theme.vim',
 Plug 'sainnhe/vim-color-vanilla-cake',
 Plug 'xdg/vim-darkluma'
+Plug 'Mizux/vim-colorschemes'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
