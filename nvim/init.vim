@@ -7,7 +7,6 @@ call plug#begin()
 
 Plug 'VundleVim/Vundle.vim',
 Plug 'scrooloose/nerdcommenter',
-Plug 'ryanoasis/vim-devicons',
 Plug 'jiangmiao/auto-pairs',
 Plug 'terryma/vim-multiple-cursors',
 Plug 'alvan/vim-closetag',
@@ -27,11 +26,11 @@ Plug 'davidosomething/vim-colors-meh',
 Plug 'junegunn/vader.vim',
 Plug 'leafgarland/typescript-vim',
 Plug 'peitalin/vim-jsx-typescript',
-Plug 'calviken/vim-gdscript3',
-
 Plug 'voldikss/vim-floaterm',
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
+
+Plug 'habamax/vim-godot',
 
 " Color
 Plug 'kamykn/dark-theme.vim',

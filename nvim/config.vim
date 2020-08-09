@@ -31,7 +31,6 @@ nmap <silent> <C-P> :Files<CR>
 " open lazygit
 nmap <silent> <C-O> :FloatermNew lazygit <CR>
 
-
 " -------------- OTHER ---------------
 
 " line numbers
@@ -39,7 +38,7 @@ set number
 set relativenumber
 
 " indent
-" set tabstop=2 expandtab shiftwidth=2
+set tabstop=2 expandtab shiftwidth=2
 let g:indentLine_char = '|'
 
 " encoding
@@ -58,8 +57,6 @@ set undofile
 set undodir=~/.tmp
 
 set guicursor+=i:hor20-Cursor/lCursor
-
-set:floaterm_position = 'center'
 
 " remove comments in new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -91,6 +88,8 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
 let g:neomake_cpp_enabled_makers = ['clang']
 let g:neomake_cpp_clang_maker = {'exe': 'clang'}
+
+let g:neomake_typescript_enabled_makers = ['tslint']
 
 "auto close errors window
 let g:qf_loclist_window_bottom = 0
@@ -141,3 +140,16 @@ function! FloatingFZF()
 
   call nvim_open_win(buf, v:true, opts)
 endfunction
+
+" -------------- GODOT ----------------
+
+func! GodotSettings() abort
+    setlocal tabstop=4
+    nnoremap <buffer> <F4> :GodotRunLast<CR>
+    nnoremap <buffer> <F5> :GodotRun<CR>
+    nnoremap <buffer> <F6> :GodotRunCurrent<CR>
+    nnoremap <buffer> <F7> :GodotRunFZF<CR>
+endfunc
+augroup godot | au!
+    au FileType gdscript call GodotSettings()
+augroup end

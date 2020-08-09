@@ -45,4 +45,7 @@ yabai -m rule --add app="^Keka$" manage=off
 yabai -m rule --add title="^About$" manage=off
 yabai -m rule --add app="^Godot$" manage=off
 yabai -m rule --add title="^Godot$" manage=off
+yabai -m rule --add title="Godot" manage=off
+
+
 
