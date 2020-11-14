@@ -29,22 +29,28 @@ Plug 'peitalin/vim-jsx-typescript',
 Plug 'voldikss/vim-floaterm',
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
+Plug 'MaxMEllon/vim-jsx-pretty',
 
 Plug 'habamax/vim-godot',
 
 " Color
 Plug 'kamykn/dark-theme.vim',
 Plug 'sainnhe/vim-color-vanilla-cake',
-Plug 'xdg/vim-darkluma'
-Plug 'Mizux/vim-colorschemes'
+Plug 'xdg/vim-darkluma',
+Plug 'Mizux/vim-colorschemes',
+Plug 'ntk148v/vim-horizon',
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
 
 call plug#end()
 
+set termguicolors
+
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/eslint-local.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/day.vim
 
+
+" colorscheme horizon

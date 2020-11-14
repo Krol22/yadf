@@ -29,7 +29,7 @@ tnoremap <C-R> <C-\><C-n>
 nmap <silent> <C-P> :Files<CR>
 
 " open lazygit
-nmap <silent> <C-O> :FloatermNew lazygit <CR>
+" nmap <silent> <C-O> :FloatermNew lazygit <CR>
 
 " -------------- OTHER ---------------
 
@@ -56,7 +56,10 @@ set dir=~/.tmp
 set undofile
 set undodir=~/.tmp
 
+" different corsor for inser mode
 set guicursor+=i:hor20-Cursor/lCursor
+
+set autoread
 
 " remove comments in new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

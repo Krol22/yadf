@@ -17,8 +17,5 @@
 			"filetypes": ["gdscript"],
 			"port": 6008
 		}
-	},
-	"emmet.includeLanguages": {
-		"javascript": "javascriptreact"
 	}
 }
