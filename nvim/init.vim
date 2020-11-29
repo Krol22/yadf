@@ -13,7 +13,6 @@ Plug 'alvan/vim-closetag',
 Plug 'elzr/vim-json',
 Plug 'neomake/neomake',
 Plug 'Yggdroot/indentLine',
-Plug 'vim-airline/vim-airline',
 Plug 'romainl/vim-qf',
 Plug 'othree/yajs.vim',
 Plug 'tpope/vim-surround',
@@ -30,6 +29,9 @@ Plug 'voldikss/vim-floaterm',
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
 Plug 'MaxMEllon/vim-jsx-pretty',
+Plug 'junegunn/goyo.vim',
+Plug 'vim-airline/vim-airline',
+Plug 'vim-airline/vim-airline-themes',
 
 Plug 'habamax/vim-godot',
 
