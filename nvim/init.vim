@@ -26,6 +26,7 @@ Plug 'voldikss/vim-floaterm',
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
 Plug 'MaxMEllon/vim-jsx-pretty',
+Plug 'junegunn/goyo.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
 
