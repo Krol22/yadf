@@ -1,22 +1,12 @@
 filetype plugin indent on
 
-" use mouse
-set mouse=a
-
-autocmd User Startified setlocal buflisted
-
-" -------------- NAVIGATION ---------------
+" -------------- MAPPINGS ---------------
 
 " panes
 nmap <silent> <C-h> :winc h<CR>
 nmap <silent> <C-j> :winc j<CR>
 nmap <silent> <C-k> :winc k<CR>
 nmap <silent> <C-l> :winc l<CR>
-
-" tabs
-nmap <silent> tn :tabnew<Space>
-nmap <silent> tk :tabnext<CR>
-nmap <silent> tj :tabprev<CR>
 
 " save & quit
 nmap <silent> <C-q> :q <CR>
@@ -28,10 +18,17 @@ tnoremap <C-R> <C-\><C-n>
 " open fzf
 nmap <silent> <C-P> :Files<CR>
 
-" open lazygit
-" nmap <silent> <C-O> :FloatermNew lazygit <CR>
+" comment in normal and visual mode
+nmap <C-_> <leader>c<space>
+vmap <C-_> <leader>c<space>
 
-" -------------- OTHER ---------------
+" search
+nnoremap <C-f> :CocSearch<space>
+
+" -------------- CONFIGS ---------------
+
+" use mouse
+set mouse=a
 
 " line numbers
 set number
@@ -59,6 +56,7 @@ set undodir=~/.tmp
 " different corsor for inser mode
 set guicursor+=i:hor20-Cursor/lCursor
 
+" autoreload file after :e
 set autoread
 
 " remove comments in new line
@@ -97,15 +95,9 @@ let g:neomake_typescript_enabled_makers = ['tslint']
 "auto close errors window
 let g:qf_loclist_window_bottom = 0
 
-" AUTOCOMPLETE
-" inoremap <expr><TAB> pumvisible() ? "\<C-n>": "<TAB>"
-
-let g:SuperTabClosePreviewOnPopupClose = 1
+" let g:SuperTabClosePreviewOnPopupClose = 1
 
 " --------------- COMMENTS -----------------
-
-nmap <C-_> <leader>c<space>
-vmap <C-_> <leader>c<space>
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -144,15 +136,3 @@ function! FloatingFZF()
   call nvim_open_win(buf, v:true, opts)
 endfunction
 
-" -------------- GODOT ----------------
-
-func! GodotSettings() abort
-    setlocal tabstop=4
-    nnoremap <buffer> <F4> :GodotRunLast<CR>
-    nnoremap <buffer> <F5> :GodotRun<CR>
-    nnoremap <buffer> <F6> :GodotRunCurrent<CR>
-    nnoremap <buffer> <F7> :GodotRunFZF<CR>
-endfunc
-augroup godot | au!
-    au FileType gdscript call GodotSettings()
-augroup end

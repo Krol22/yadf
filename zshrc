@@ -21,7 +21,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle fcambus/ansiweather
 
-antigen theme lambda
+antigen theme mgutz
 
 antigen apply
 
