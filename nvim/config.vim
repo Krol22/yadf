@@ -25,6 +25,10 @@ vmap <C-_> <leader>c<space>
 " search
 nnoremap <C-f> :CocSearch<space>
 
+" show next matched string at the center of screen
+nnoremap n nzz
+nnoremap N Nzz
+
 " -------------- CONFIGS ---------------
 
 " use mouse
