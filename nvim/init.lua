@@ -1,2 +1,3 @@
-require("keymappings");
-require("config");
+require("plugins")
+require("keymappings")
+require("config")
