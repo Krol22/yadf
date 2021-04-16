@@ -11,3 +11,6 @@ vim.api.nvim_set_keymap('n', '<C-s>', ':w <CR>', {silent = true})
 -- search
 vim.api.nvim_set_keymap('n', 'n', 'nzz', {noremap = true})
 vim.api.nvim_set_keymap('n', 'N', 'Nzz', {noremap = true})
+
+-- fzf
+vim.api.nvim_set_keymap('n', '<C-P>', ':Files<CR>', {silent = true})
