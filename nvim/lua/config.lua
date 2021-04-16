@@ -1,27 +1,29 @@
+local cmd = vim.cmd 
+
 -- use mouse
 vim.o.mouse = "a"
 
 -- line numbers
-vim.o.number = true
-vim.o.relativenumber = true
+vim.wo.number = true
+vim.wo.relativenumber = true
 
 -- indent
-vim.o.tabstop = 2
-vim.o.expandtab = true
-vim.o.shiftwidth = 2
+vim.bo.tabstop = 2
+vim.bo.expandtab = true
+vim.bo.shiftwidth = 2
 
 -- encoding
-vim.o.encoding = "utf8"
+vim.bo.fileencoding = "utf8"
 
 -- search
 vim.o.incsearch = true
 vim.o.dir = "~/.tmp"
 
 -- persistent undo
-vim.o.undofile = true
+vim.bo.undofile = true
 vim.o.undodir = "~/.tmp"
 
 -- autoreload file after :e
 vim.o.autoread = true
 
-
+cmd "colorscheme horizon"
