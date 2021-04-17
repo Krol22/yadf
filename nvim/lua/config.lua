@@ -1,4 +1,3 @@
---
 local cmd = vim.cmd 
 
 -- use mouse
@@ -55,4 +54,4 @@ vim.g.NERDTrimTrailingWhitespace = 1
 vim.g.NERDToggleCheckAllLines = 1
 
 cmd("colorscheme horizon")
-
+cmd("hi Normal guibg=NONE ctermbg=NONE")
