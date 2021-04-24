@@ -1,5 +1,6 @@
 {
 	"coc.preferences.colorSupport": true,
+	"coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "javasriptreact", "typescript", "typescriptreact"],
 	"diagnostic.refreshOnInsertMode": false,
 	"languageserver": {
 		"ccls": {

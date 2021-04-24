@@ -48,6 +48,7 @@ After plugins installation you need to run :
 - ``` :CocInstall coc-tsserver ```
 - ``` :CocInstall coc-emmet ``` 
 - ``` :CocInstall coc-markdownlint ``` 
+- ``` :CocInstall coc-prettier ``` 
 
 to install all extensions for [coc.nvim](https://github.com/neoclide/coc.nvim).
 

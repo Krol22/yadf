@@ -5,6 +5,7 @@ filetype off
 
 call plug#begin()
 
+Plug 'preservim/nerdtree',
 Plug 'VundleVim/Vundle.vim',
 Plug 'scrooloose/nerdcommenter',
 Plug 'jiangmiao/auto-pairs',
@@ -16,7 +17,6 @@ Plug 'Yggdroot/indentLine',
 Plug 'romainl/vim-qf',
 Plug 'othree/yajs.vim',
 Plug 'tpope/vim-surround',
-Plug 'tpope/vim-vinegar',
 Plug 'tpope/vim-sleuth',
 Plug 'luochen1990/rainbow',
 Plug 'junegunn/vader.vim',

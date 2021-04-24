@@ -29,6 +29,10 @@ nnoremap <C-f> :CocSearch<space>
 nnoremap n nzz
 nnoremap N Nzz
 
+nmap <C-1> :CocCommand prettier.formatFile
+
+nnoremap - :NERDTreeToggle<CR>
+
 " -------------- CONFIGS ---------------
 
 " use mouse
