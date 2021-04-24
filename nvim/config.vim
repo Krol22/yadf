@@ -84,13 +84,17 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 " enable rainbow parentheses
 let g:rainbow_active = 1
 
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+
 " -------------- NEOMAKE ---------------
 
 autocmd! BufWritePost * Neomake
 let g:neomake_open_list = 2
 
 let g:neomake_javascript_enabled_makers = ['eslint']
-let b:neomake_javascript_eslint_exe = GetNpmBin('eslint')
+let b:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
 
 let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
