@@ -30,8 +30,7 @@ nnoremap n nzz
 nnoremap N Nzz
 
 nmap <C-1> :CocCommand prettier.formatFile
-
-nnoremap - :NERDTreeToggle<CR>
+nnoremap <C-a> :CocAction<CR>
 
 " -------------- CONFIGS ---------------
 
@@ -93,8 +92,9 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 autocmd! BufWritePost * Neomake
 let g:neomake_open_list = 2
 
-let g:neomake_javascript_enabled_makers = ['eslint']
-let b:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" let b:neomake_javascript_eslint_maker = {'exe': 'npx eslint'}
+let g:neomake_javascript_enabled_makers = []
 
 let g:neomake_html_enabled_makers = ['htmlhint']
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'

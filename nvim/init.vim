@@ -5,7 +5,7 @@ filetype off
 
 call plug#begin()
 
-Plug 'preservim/nerdtree',
+Plug 'tpope/vim-vinegar',
 Plug 'VundleVim/Vundle.vim',
 Plug 'scrooloose/nerdcommenter',
 Plug 'jiangmiao/auto-pairs',
@@ -27,8 +27,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim',
 Plug 'MaxMEllon/vim-jsx-pretty',
 Plug 'junegunn/goyo.vim',
+Plug 'habamax/vim-godot',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 " Color
 Plug 'sainnhe/vim-color-vanilla-cake',

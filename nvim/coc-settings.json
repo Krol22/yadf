@@ -2,6 +2,10 @@
 	"coc.preferences.colorSupport": true,
 	"coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "javasriptreact", "typescript", "typescriptreact"],
 	"diagnostic.refreshOnInsertMode": false,
+	"diagnostic.virtualText": true,
+	"diagnostic.virtualTextCurrentLineOnly": true,
+	"diagnostic.messageTarget": "echo",
+	"prettier.eslintIntegration": true,
 	"languageserver": {
 		"ccls": {
 			"command": "ccls",
