@@ -24,6 +24,11 @@ font:
     x: 1 
     y: 1
 
+cursor:
+  style:
+    shape: Block
+    blinking: On
+
 shell:
   program: /usr/local/bin/fish
   args:
