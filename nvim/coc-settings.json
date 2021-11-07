@@ -1,26 +1,14 @@
 {
 	"coc.preferences.colorSupport": true,
-	"coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "javasriptreact", "typescript", "typescriptreact"],
 	"diagnostic.refreshOnInsertMode": false,
 	"diagnostic.virtualText": true,
 	"diagnostic.virtualTextCurrentLineOnly": true,
 	"diagnostic.messageTarget": "echo",
-	"prettier.eslintIntegration": true,
 	"languageserver": {
-		"ccls": {
-			"command": "ccls",
-			"filetypes": ["c", "cpp", "objc", "objcpp"],
-			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-			"initializationOptions": {
-				"cache": {
-					"directory": "/tmp/ccls"
-				}
-			}
-		},
 		"godot": {
 			"host": "127.0.0.1",
 			"filetypes": ["gdscript"],
 			"port": 6008
 		}
-	}
+  }
 }
