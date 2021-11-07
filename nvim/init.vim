@@ -31,10 +31,12 @@ Plug 'habamax/vim-godot',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'leafOfTree/vim-svelte-plugin',
 
 " Color
 Plug 'sainnhe/vim-color-vanilla-cake',
 Plug 'ntk148v/vim-horizon',
+Plug 'embark-theme/vim',
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'},
@@ -47,6 +49,3 @@ source ~/.config/nvim/coc.vim
 source ~/.config/nvim/eslint-local.vim
 source ~/.config/nvim/config.vim
 source ~/.config/nvim/day.vim
-
-
-" colorscheme horizon

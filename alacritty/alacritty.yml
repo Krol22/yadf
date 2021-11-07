@@ -1,0 +1,32 @@
+window:
+  decorations: buttonless
+
+colors:
+  primary:
+    background: '0x1c1e26'
+    foreground: '0xd3d3d3'
+  cursor:
+    cursor: '0xffffff'
+
+font:
+  use_thin_strokes: true
+  normal:
+    family: FuraCode Nerd Font Mono
+    style: Retina
+  bold:
+    family: FuraCode Nerd Font Mono
+    style: Retina
+  italic:
+    family: FuraCode Nerd Font Mono
+    style: Retina
+  size: 11
+  offset:
+    x: 1 
+    y: 1
+
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - -l
+    - -c
+    - "tmux"

@@ -1,77 +1,26 @@
 # YADF
+
 Yet another dot files.
 
-## Screenshot
+Contains my configuration for:
 
-![Screenshot](https://raw.githubusercontent.com/Krol22/yadf/master/screenshot/screen.jpg)
+- alacritty
+- fish
+- tmux
+- neovim (with coc-extentions)
 
-## Installation
+Coc-extensions that I use
 
-Clone repository
-```
-  git clone https://github.com/krol22/yadf
-  cd yadf
-```
+- coc-emmet
+- coc-json
+- coc-markdownlint
+- coc-marketplace
+- coc-sh
+- coc-tabnine
+- coc-tsserver
 
-Launch installation script
-```
-  chmod +x install.sh
-  ./install.sh
-```
+Repository contains 2 scripts:
 
-If you want to install just nvim configuration run:
-```
-  chmod +x install-nvim-only.sh
-  ./install-nvim-only.sh
-```
-
-## Installs:
-- [zsh](http://zsh.sourceforge.net)
-- [neovim](https://neovim.io) 
-- [node](https://nodejs.org/en/)
-- [dozer](https://github.com/Mortennn/Dozer)
-- [oh-my-zsh](https://ohmyz.sh)
-- [antigen.zsh](https://github.com/zsh-users/antigen)
-- [colorls](https://github.com/athityakumar/colorls)
-- [Übersicht](http://tracesof.net/uebersicht/)
-- [yabai](https://github.com/koekeishiya/yabai)
-- [skhd](https://github.com/koekeishiya/skhd)
-- [pecan](https://github.com/zzzeyez/pecan)
-
-Npm packages:
-- [tern](https://github.com/ternjs/tern)
-
-`install.sh` script links zsh configuration file (`zshrc`) to `~/.zshrc`. Also it copies `nvim` folder to `~/.config/`. You still need to run command `:PlugInstall` from neovim to install all plugins listed in `nvim/init.vim`. 
-
-After plugins installation you need to run :
-
-- ``` :CocInstall coc-tsserver ```
-- ``` :CocInstall coc-emmet ``` 
-- ``` :CocInstall coc-markdownlint ``` 
-- ``` :CocInstall coc-prettier ``` 
-
-to install all extensions for [coc.nvim](https://github.com/neoclide/coc.nvim).
-
-## Includes aliases:
-```
-alias cp="cp -vi"
-alias mv="mv -vi"
-alias rm="rm -i"
-alias vim="nvim"
-alias vi="nvim"
-
-alias ls="colorls"
-alias l="colorls"
-
-alias gd="git diff"
-alias gc="git commit -m"
-alias gs="git status"
-alias gp="git push origin"
-alias glp="gp -l"
-```
-
-## Todo: 
-
-- workspaces configuration (not working currently),
-- pecan configuration,
-
+- `install.sh` should set up all necessary programs and copy configuration in
+place (not tested),
+- `install-nvim-only.sh` - self explanatory, will copy only nvim configuration

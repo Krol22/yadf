@@ -32,6 +32,8 @@ nnoremap N Nzz
 nmap <C-1> :CocCommand prettier.formatFile
 nnoremap <C-a> :CocAction<CR>
 
+nnoremap <C-e> :CocList -A demo_list<CR>
+
 " -------------- CONFIGS ---------------
 
 " use mouse
@@ -65,6 +67,10 @@ set guicursor+=i:hor20-Cursor/lCursor
 
 " autoreload file after :e
 set autoread
+
+" italics in tmux
+set t_ZH=^[[3m
+set t_ZR=^[[23m
 
 " remove comments in new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
