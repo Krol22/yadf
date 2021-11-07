@@ -3,7 +3,7 @@ window:
 
 colors:
   primary:
-    background: '0x1c1e26'
+    background: '0x262626'
     foreground: '0xd3d3d3'
   cursor:
     cursor: '0xffffff'
@@ -15,10 +15,10 @@ font:
     style: Retina
   bold:
     family: FuraCode Nerd Font Mono
-    style: Retina
+    style: Bold
   italic:
     family: FuraCode Nerd Font Mono
-    style: Retina
+    style: Italic
   size: 11
   offset:
     x: 1 
