@@ -12,9 +12,9 @@ alias ls="colorls"
 alias l="colorls"
 
 alias gd="git diff"
-alias gc="git commit -m"
+alias gc="git commit"
 alias gs="git status"
-alias gp="git push origin"
+alias gp="git push"
 alias glp="gp -l"
 alias ga="git add"
 
