@@ -13,9 +13,9 @@ alias l="colorls"
 
 alias ga="git add"
 alias gd="git diff"
-alias gc="git commit -m"
+alias gc="git commit"
 alias gs="git status"
-alias gp="git push origin"
+alias gp="git push"
 alias glp="gp -l"
 
 export PATH=~/.npm-global/bin:/usr/local/bin/mongod:/bin:/usr/bin:/usr/local/bin:{$PATH}
