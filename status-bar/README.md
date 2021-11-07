@@ -8,4 +8,4 @@ STORAGE_BUCKET
 ```
 
 ## Screenshot
-![Screenshot](https://raw.githubusercontent.com/Krol22/yadf/master/screenshot/status-bar.png)
+![Screenshot](https://raw.githubusercontent.com/Krol22/yadf/master/screenshots/status-bar.png)
