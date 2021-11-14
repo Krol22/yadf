@@ -2,32 +2,8 @@ filetype plugin indent on
 
 " -------------- MAPPINGS ---------------
 
-" panes
-nmap <silent> <C-h> :winc h<CR>
-nmap <silent> <C-j> :winc j<CR>
-nmap <silent> <C-k> :winc k<CR>
-nmap <silent> <C-l> :winc l<CR>
-
-" save & quit
-nmap <silent> <C-q> :q <CR>
-nmap <silent> <C-s> :w <CR>
-
-" exit from terminal
-tnoremap <C-R> <C-\><C-n>
-
-" open fzf
-nmap <silent> <C-P> :Files<CR>
-
-" comment in normal and visual mode
-nmap <C-_> <leader>c<space>
-vmap <C-_> <leader>c<space>
-
 " search
 nnoremap <C-f> :CocSearch<space>
-
-" show next matched string at the center of screen
-nnoremap n nzz
-nnoremap N Nzz
 
 nmap <C-1> :CocCommand prettier.formatFile
 nnoremap <C-a> :CocAction<CR>
@@ -35,45 +11,7 @@ nnoremap <C-a> :CocAction<CR>
 nnoremap <C-e> :CocList -A demo_list<CR>
 
 " -------------- CONFIGS ---------------
-
-" use mouse
-set mouse=a
-
-" line numbers
-set number
-set relativenumber
-
 " indent
-set tabstop=2 expandtab shiftwidth=2
-let g:indentLine_char = '|'
-
-" encoding
-set encoding=utf8
-
-" search 
-set incsearch
-set ignorecase 
-
-" swp files save dir
-set swapfile
-set dir=~/.tmp
-
-" persistent undo
-set undofile
-set undodir=~/.tmp
-
-" different corsor for inser mode
-set guicursor+=i:hor20-Cursor/lCursor
-
-" autoreload file after :e
-set autoread
-
-" italics in tmux
-set t_ZH=^[[3m
-set t_ZR=^[[23m
-
-" remove comments in new line
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " json quotation marks
 let g:vim_json_syntax_conceal = 0
@@ -85,13 +23,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 " python configuration
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
-
-" enable rainbow parentheses
-let g:rainbow_active = 1
-
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 " -------------- NEOMAKE ---------------
 
