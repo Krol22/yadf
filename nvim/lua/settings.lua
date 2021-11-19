@@ -58,6 +58,18 @@ g.rainbow_active = 1
 -- autoclose error window
 g.qf_loclist_window_bottom = 0
 
+-- exit on esc in telescope
+local actions = require('telescope.actions')
+require('telescope').setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
+  }
+}
+
 -- LSP
 lsp.tsserver.setup{}
 lsp.tsserver.setup(coq.lsp_ensure_capabilities({}))

@@ -27,8 +27,9 @@ nmap("<C-s>", ":w <CR>", { silent = true })
 nmap("n", "nzz", { noremap = true })
 nmap("N", "Nzz", { noremap = true })
 
--- fzf
-nmap("<C-P>", ":Files <CR>", { silent = true })
+-- telescope
+nmap("<C-P>", ":Telescope file_browser <CR>", { silent = true })
+nmap("<C-F>", ":Telescope live_grep <CR>", { silent = true })
 
 vim.g.fzf_action = {
   ["ctrl-s"] = "split",

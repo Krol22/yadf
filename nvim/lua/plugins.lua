@@ -17,14 +17,18 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-sleuth'
   use 'junegunn/goyo.vim'
-  use {'junegunn/fzf', run = function() vim.fn['fzf#install'](0) end }
-  use 'junegunn/fzf.vim'
   use 'scrooloose/nerdcommenter'
   use 'jiangmiao/auto-pairs'
   use 'alvan/vim-closetag'
   use 'Yggdroot/indentLine'
   use 'mg979/vim-visual-multi'
   use 'romainl/vim-qf'
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use 'nvim-treesitter/nvim-treesitter'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
