@@ -1,6 +1,7 @@
 import Battery from "./lib/Battery.jsx";
 import Led from "./lib/Led.jsx";
 import Time from "./lib/Time.jsx";
+import Temperature from "./lib/Temperature.jsx";
 import Volume from './lib/Volume.jsx';
 import parse from "./lib/parse.jsx";
 import styles from "./lib/styles.jsx";
@@ -39,6 +40,7 @@ export const render = ({ output }) => {
       <Volume output={data.volume} />
       <Battery output={data.battery} />
       <Time output={data.time} />
+      <Temperature output={data.temperature} />
     </div>
   );
 };

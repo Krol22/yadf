@@ -131,9 +131,9 @@ LOAD_AVERAGE=$(sysctl -n vm.loadavg | awk '{print $2}')
 WIFI_STATUS=$(ifconfig en0 | grep status | cut -c 10-)
 WIFI_SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
-DND=$(defaults -currentHost read com.apple.notificationcenterui doNotDisturb)
-
 VOLUME=$(osascript -e 'get volume settings')
+
+TEMP=$(curl -s https://wttr.in/Katowice\?format=%t)
 
 echo $(cat <<-EOF
 {
@@ -151,11 +151,11 @@ echo $(cat <<-EOF
 		"status": "$WIFI_STATUS",
         "ssid": "$WIFI_SSID"
     },
-	"netstats": {
-		"kbin": "$kbin",
-		"kbout": "$kbout"
-	},
-	"dnd": $DND
+    "netstats": {
+	    "kbin": "$kbin",
+	    "kbout": "$kbout"
+    },
+    "temperature": "$TEMP"
 }
 EOF
 )

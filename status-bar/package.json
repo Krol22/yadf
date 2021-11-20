@@ -1,0 +1,15 @@
+{
+  "name": "status-bar",
+  "version": "1.0.0",
+  "description": "For turning on and off leds setup `.env` file with this variables",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
