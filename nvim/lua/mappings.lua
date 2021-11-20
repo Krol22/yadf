@@ -27,14 +27,18 @@ nmap("<C-s>", ":w <CR>", { silent = true })
 nmap("n", "nzz", { noremap = true })
 nmap("N", "Nzz", { noremap = true })
 
--- telescope
-nmap("<C-P>", ":Telescope file_browser <CR>", { silent = true })
+-- telescope stuff
+nmap("<C-P>", ":Telescope find_files <CR>", { silent = true })
 nmap("<C-F>", ":Telescope live_grep <CR>", { silent = true })
+nmap("<C-d>", ":Telescope lsp_implementations <CR>", {})
 
 vim.g.fzf_action = {
   ["ctrl-s"] = "split",
   ["ctrl-v"] = "vsplit",
 }
+
+-- code actions
+nmap("<C-a>", ":CodeActionMenu <CR>", { silent = true })
 
 -- comment in normal and visual mode
 nmap("<C-_>", "<leader>c<space>", {})

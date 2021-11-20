@@ -23,12 +23,13 @@ return require('packer').startup(function(use)
   use 'Yggdroot/indentLine'
   use 'mg979/vim-visual-multi'
   use 'romainl/vim-qf'
+  use 'nvim-lua/plenary.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use 'nvim-treesitter/nvim-treesitter'
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
@@ -41,6 +42,12 @@ return require('packer').startup(function(use)
   use { 
     'ms-jpq/coq.thirdparty',
     branch = '3p'
+  }
+
+  -- code actions
+  use {
+    'weilbith/nvim-code-action-menu',
+    cmd = 'CodeActionMenu',
   }
 
   -- coding
