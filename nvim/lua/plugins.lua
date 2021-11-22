@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-sleuth'
   use 'junegunn/goyo.vim'
   use 'scrooloose/nerdcommenter'
-  use 'jiangmiao/auto-pairs'
+  -- use 'jiangmiao/auto-pairs'
   use 'alvan/vim-closetag'
   use 'Yggdroot/indentLine'
   use 'mg979/vim-visual-multi'
@@ -67,4 +67,5 @@ return require('packer').startup(function(use)
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'embark-theme/vim'
+  use 'folke/lsp-colors.nvim'
 end)

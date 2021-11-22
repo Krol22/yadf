@@ -28,9 +28,10 @@ nmap("n", "nzz", { noremap = true })
 nmap("N", "Nzz", { noremap = true })
 
 -- telescope stuff
-nmap("<C-P>", ":Telescope find_files <CR>", { silent = true })
-nmap("<C-F>", ":Telescope live_grep <CR>", { silent = true })
+nmap("<C-p>", ":Telescope find_files <CR>", { silent = true })
+nmap("<C-f>", ":Telescope live_grep <CR>", { silent = true })
 nmap("<C-d>", ":Telescope lsp_implementations <CR>", {})
+nmap("<C-u>", ":Telescope commands <CR>", { silent = true })
 
 vim.g.fzf_action = {
   ["ctrl-s"] = "split",
