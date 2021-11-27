@@ -14,7 +14,7 @@ Contains my configuration for:
 - colorls
 - fish
 - tmux
-- neovim (minimum 5.0)
+- neovim (minimum 0.5)
 - status-bar widget (for uebersicht)
 
 Repository contains 2 scripts:
