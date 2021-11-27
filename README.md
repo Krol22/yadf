@@ -21,7 +21,6 @@ Repository contains 2 scripts:
 
 - `install.sh` should set up all necessary programs and copy configuration in
 place (not tested),
-- `install-nvim-only.sh` - self explanatory, will copy only nvim configuration
 
 ## Screenshot
 ![Screenshot](https://raw.githubusercontent.com/Krol22/yadf/master/screenshots/desktop.png)
