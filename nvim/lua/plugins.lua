@@ -18,37 +18,23 @@ return require('packer').startup(function(use)
   use 'tpope/vim-sleuth'
   use 'junegunn/goyo.vim'
   use 'scrooloose/nerdcommenter'
-  -- use 'jiangmiao/auto-pairs'
+  use 'windwp/nvim-autopairs'
   use 'alvan/vim-closetag'
   use 'Yggdroot/indentLine'
   use 'mg979/vim-visual-multi'
   use 'romainl/vim-qf'
   use 'nvim-lua/plenary.nvim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+  use 'nvim-telescope/telescope.nvim'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
 
   -- completion
-  use { 
-    'ms-jpq/coq_nvim',
-    branch = 'coq'
-  }
-  use { 
-    'ms-jpq/coq.thirdparty',
-    branch = '3p'
-  }
-
-  -- code actions
-  use {
-    'weilbith/nvim-code-action-menu',
-    cmd = 'CodeActionMenu',
-  }
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/nvim-cmp'
 
   -- coding
   use 'elzr/vim-json'
@@ -61,11 +47,9 @@ return require('packer').startup(function(use)
     'styled-components/vim-styled-components',
     branch = 'main',
   }
-  use 'leafOfTree/vim-svelte-plugin'
 
   -- apperance
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'embark-theme/vim'
-  use 'folke/lsp-colors.nvim'
 end)
