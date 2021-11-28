@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
   -- coding
   use 'elzr/vim-json'
@@ -52,4 +54,5 @@ return require('packer').startup(function(use)
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'embark-theme/vim'
+  use 'onsails/lspkind-nvim'
 end)

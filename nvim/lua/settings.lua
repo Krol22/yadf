@@ -53,9 +53,6 @@ cmd('hi Normal guibg=NONE ctermbg=NONE')
 g.rainbow_active = 1
 g.vim_json_syntax_conceal = 0
 
--- autoclose error window
--- g.qf_loclist_window_bottom = 0
-
 -- exit on esc in telescope
 local actions = require('telescope.actions')
 require('telescope').setup{
@@ -66,38 +63,6 @@ require('telescope').setup{
       },
     },
   }
-}
-
-local cmp = require('cmp')
-
-cmp.setup {
-  mapping = {
-    ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-    ["<C-f>"] = cmp.mapping.scroll_docs(4),
-    ["<C-e>"] = cmp.mapping.abort(),
-    ["<C-y>"] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Insert,
-      select = true,
-    },
-    ["<c-space>"] = cmp.mapping.complete(),
-  },
-  sources = {
-    { name = "nvim_lsp", max_item_count = 20 },
-    { name = "path" },
-    { name = "buffer", keyword_length = 3 },
-  },
-  preselect = cmp.PreselectMode.None,
-  experimental = {
-    native_menu = false,
-    ghost_text = true,
-  }
-}
-
-local lsp = require "lspconfig"
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-
-lsp.tsserver.setup {
-  capabilities = capabilities
 }
 
 local nvim_autopairs = require('nvim-autopairs');

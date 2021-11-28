@@ -10,18 +10,30 @@ local eslint = {
   formatStdin = true
 }
 
-local function eslint_config_exists()
-  local eslintrc = vim.fn.glob(".eslintrc*", 0, 1)
+lsp.efm.setup {
+  settings = {
+    languages = {
+      javascript = {eslint},
+      javascriptreact = {eslint},
+      ["javascript.jsx"] = {eslint},
+      typescript = {eslint},
+      ["typescript.tsx"] = {eslint},
+      typescriptreact = {eslint},
+    }
+  },
+  filetypes = {
+    "javascript",
+    "javascriptreact",
+    "javascript.jsx",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+  }
+}
 
-  if not vim.tbl_isempty(eslintrc) then
-    return true
-  end
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+lsp.tsserver.setup {
 
-  if vim.fn.filereadable("package.json") then
-    if vim.fn.json_decode(vim.fn.readfile("package.json"))["eslintConfig"] then
-      return true
-    end
-  end
+  capabilities = capabilities
+}
 
-  return false
-end
