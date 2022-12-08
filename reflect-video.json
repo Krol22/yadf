@@ -1,0 +1,44 @@
+{
+    "type": "video-widget",
+    "miniatureUrl": "https://s3.us-central-1.wasabisys.com/brevy-assets/ramp.png",
+    "videoUrl": "https://rr1---sn-f5f7lnee.c.drive.google.com/videoplayback?expire=1670440095&ei=X6yQY_ajNpzy1bYP2puSoAQ&ip=77.253.135.245&cp=QVRMUkVfT1BXRlhPOjBweEsxNVB5aDZOZkRGYy11WVdXb1IzUExpTmxlaHdLaGxFSmgzdVYzaFk&id=d7cac3367122d27f&itag=22&source=webdrive&requiressl=yes&mh=-V&mm=32&mn=sn-f5f7lnee&ms=su&mv=m&mvi=1&pl=18&sc=yes&ttl=transient&susc=dr&driveid=1mRVksacPGhTeBpqgCpn_PwQ94yqFFf8S&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=271.418&lmt=1668008604347101&mt=1670425026&subapp=DRIVE_WEB_FILE_VIEWER&txp=0016224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgCcTLSTwCUQfe3UM5tZmaAAtBSR_jGNFtkd9BVpHcosMCIAdcD1crLPFVFgIYLX-oS_XXkKcnykGo2UfowpakBPKC&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRAIgMrhAdTsxFHBd2oADDeBDVEhgDg_I1jh5x22nYrBIQLQCIHwTtMNBbR1yO2woi9QEkBJ_DxhLInE-Rlui-s9UgrMG&cpn=qQ2cEDHdjElmGr7",
+    "shortTitle": "5 Minute Video",
+    "longTitle": "Discover how Reflect streamlines regression testing for webapps.",
+    "description": "Reflect makes regression tests easy to create and painless to maintain. High growth teams use Reflect to catch bugs without slowing down development velocity.",
+    "promptText": "Intrested in trying Reflect for free?",
+    "actionButtonLabel": "Try for free",
+    "ctaUrl": "https://google.com",
+    "highlights": [
+      {
+        "text": "Reflect's mission",
+        "timestamp": 34
+      },
+      {
+        "text": "Recording your app on reflect",
+        "timestamp": 98
+      },
+      {
+        "text": "Pixel difference threshold",
+        "timestamp": 120
+      },
+      {
+        "text": "Approving a change",
+        "timestamp": 203
+      },
+      {
+        "text": "Error Logging",
+        "timestamp": 261
+      }
+    ],
+    "theme": {
+        "backgroundColor": "white",
+        "accentColor": "#3c3ad3",
+        "secondaryAccentColor": "#6A8BF3",
+        "primaryTextColor": "#687083",
+        "secondaryTextColor": "#1b212f",
+        "tertiaryTextColor": "#c7c7c7",
+        "primaryButtonBackground": "white",
+        "secondaryButtonBackground": "rgba(255, 255, 255, 0.6)",
+        "borderColor": "#E1E1E1"
+    }
+}
